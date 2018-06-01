@@ -31,3 +31,27 @@ $ cd centos7-desktop
 $ vagrant init centos/7
 $ vagrant up
 
+Most Common Vagrant Commands
+--------------------------------------------------
+vagrant init: (initialize)
+vagrant up: download image and do rest of the settings and power-up the box
+vagrant status: Shows status
+vagrant suspend: Saves the box’s current state
+vagrant halt: shutdown the box (Power-off)
+vagrant destroy:  shutdown and delete the box
+
+Vagrant ssh (Connecting non-gui Linux OS)
+Vagrant version (Get Version Information)
+
+Version Control of Vagrant by Using Git
+You can edit VagrantFile and commit the modifications in a git repo by using below commands.
+--------------------------------------
+git version: get version information
+git init: initialize the repo
+git add: adding files to git repo
+git commit -m “comment”: committing a file with a comment
+git log –oneline: showing log history one line
+git status: showing status of modifications
+git ignore: Ignores the file types and do not hold them in the repo.
+  Note: Create a .gitignore file and add “.vagrant” in it.
+

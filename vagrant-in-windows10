@@ -1,0 +1,33 @@
+Thanks to https://www.swtestacademy.com/quick-start-vagrant-windows-10/
+
+Required Tools
+  Virtualbox
+  Vagrant
+  Git
+ 
+1- Install Git for Windows
+Download URL: https://git-scm.com/download/win
+2- Install VirtualBox
+  Downlod Link: http://download.virtualbox.org/virtualbox/5.1.4/VirtualBox-5.1.4-110228-Win.exe
+Also, download Oracle VM VirtualBox Extension Pack.
+ Download Link: http://download.virtualbox.org/virtualbox/5.1.4/Oracle_VM_VirtualBox_Extension_Pack-5.1.4.vbox-extpack
+ 3- Install Vagrant
+  Vagrant Download Link: https://releases.hashicorp.com/vagrant/1.9.2/vagrant_1.9.2.msi
+  
+  After these setting you should do below settings to run Vagrant without any problem:
+1) Enable VT-X (Intel Virtualization Technology) in your computer bios settings.
+2) Disable Hyper-V on program and features page in the control panel.
+
+
+Download and Run Ubuntu Desktop (GUI) Vagrant Box on Windows 10
+-----------------------------------------------------------------
+Open Git Bash and type “pwd” it should show your user directory as shown below:
+$ pwd
+/c/Users/lenovo
+$ mkdir projects
+$ cd projects
+$ mkdir centos7-desktop
+$ cd centos7-desktop
+$ vagrant init centos/7
+$ vagrant up
+

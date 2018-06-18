@@ -1,3 +1,5 @@
+Thanks to : https://manski.net/2016/09/vagrant-multi-machine-tutorial/#endresult
+
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 # Every Vagrant development environment requires a box. You can search for 
@@ -20,3 +22,4 @@ Vagrant.configure("2") do |config|
 end
 
 =============== copy and paste as Vagrantfile ==========
+Follow the kubernetes setup. Thanks to : https://www.edureka.co/blog/install-kubernetes-on-ubuntu

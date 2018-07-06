@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
       machine.vm.provision "shell", inline: <<-SHELL
           sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
           systemctl restart sshd.service
-          egrep -i "^npelastic:" /etc/passwd || useradd elastic -s /bin/bash -p sazlddNmCKGvg -u 9001
+          egrep -i "^elastic:" /etc/passwd || useradd elastic -s /bin/bash -p sazlddNmCKGvg -u 9001
       SHELL
       if machine_id == N
         machine.vm.provision :ansible do |ansible|
